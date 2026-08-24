@@ -1,3 +1,4 @@
+/* LUAVA Pilates — shared app logic V14 */
 
 (function(){
   const cfg = window.LUAVA_CONFIG || {};
@@ -37,6 +38,7 @@
     });
   }
 })();
+
 (function(){
   const cfg = window.LUAVA_CONFIG || {};
   if(!cfg.openingDate) return;
