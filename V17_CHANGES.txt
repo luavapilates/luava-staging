@@ -1,0 +1,14 @@
+LUAVA V17 — Mobile Conversion Final
+
+Desktop:
+- unchanged
+
+Mobile homepage:
+- Hero explains Reformer Pilates immediately
+- Beginner reassurance directly under first CTA
+- Anfänger-Class visually recommended
+- First-visit flow rewritten for complete beginners
+- Homepage price presentation simplified
+- Credit mechanics moved behind Preise & Credits
+- Final CTA simplified
+- Sticky centered-logo header from V16 retained
