@@ -1,0 +1,32 @@
+LUAVA V13 – MOBILE-FIRST PASS
+
+PROBLEM
+Die bisherige Seite war responsiv, aber Desktop-Komponenten wurden auf Mobile zu oft einfach untereinander gestapelt.
+Das führte zu sehr langen Scroll-Strecken.
+
+V13 ÄNDERUNGEN
+- deutlich kleinere vertikale Section-Abstände
+- kompakter Hero
+- Hero-Bild von ca. 440 px auf ca. 330 px
+- Desktop-Zitat im Hero auf Mobile ausgeblendet
+- weniger Hero-Facts
+- Gallery zeigt Mobile nur das wichtigste Bild
+- Classes seitlich wischbar statt 3 Karten untereinander
+- Credit-Pakete seitlich wischbar
+- Matcha / Grip Socks seitlich wischbar
+- Events seitlich wischbar
+- Studio-Facts seitlich wischbar
+- Credit-Erklärung seitlich wischbar
+- FAQ auf Startseite auf vier Fragen gekürzt
+- kompakter Kursplan und Checkout
+- kompakter Footer + Bottom-Bar
+- sekundäre Bildflächen deutlich reduziert
+
+DESKTOP
+Desktop-Layout bleibt unverändert.
+
+TESTGERÄTE EMPFOHLEN
+- iPhone 17 Pro Max / Safari
+- iPhone Standardgröße ca. 390 px
+- Android ca. 360–412 px
+- Mac Desktop

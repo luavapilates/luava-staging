@@ -9,6 +9,440 @@
 body{font-family:Arial,sans-serif;background:#f1e9e0;color:#2b2522;display:grid;place-items:center;min-height:100vh;margin:0}
 div{max-width:600px;background:#fffaf5;padding:32px;border-radius:24px}
 a{color:inherit}
+
+/* =========================================================
+   V13 — TRUE MOBILE-FIRST PASS
+   Desktop remains unchanged. Mobile becomes much shorter.
+   ========================================================= */
+
+@media(max-width:680px){
+
+  /* Global rhythm */
+  body{font-size:15px}
+  .wrap{width:calc(100% - 20px)}
+  .section{padding:46px 0}
+  .section.tight{padding:34px 0}
+  .page-hero{padding:34px 0 20px}
+  .soft{border-block-color:rgba(43,37,34,.045)}
+  .lead{font-size:.93rem;line-height:1.55}
+  .eyebrow{font-size:.58rem;letter-spacing:.18em}
+  .h1{font-size:clamp(3rem,13.3vw,4.25rem);line-height:.91;margin:10px 0 17px}
+  .h2{font-size:clamp(2rem,9.7vw,3rem);line-height:1;margin:8px 0 13px}
+  .h3{font-size:1.45rem}
+
+  /* Announcement + header */
+  .announce{
+    padding:7px 42px 7px 10px;
+    font-size:.61rem;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .nav{height:62px}
+  .logo{width:91px}
+  .navactions>.btn.ghost{display:none}
+  .navactions>.btn.dark{min-height:38px;padding:0 13px;font-size:.72rem}
+  .mobile-menu summary{font-size:1.05rem}
+  .mobile-panel{width:min(260px,calc(100vw - 24px));top:40px}
+
+  /* HERO: cut roughly 25-30% vertical height */
+  .hero{padding:27px 0 22px}
+  .hero-grid{gap:20px}
+  .hero-copy{padding:0}
+  .hero-copy p{font-size:.92rem;line-height:1.53;margin-bottom:0}
+  .hero-copy .eyebrow,.page-hero .eyebrow{padding-left:29px}
+  .hero-copy .eyebrow:before,.page-hero .eyebrow:before{width:18px}
+  .hero-actions{margin-top:18px;gap:7px}
+  .hero-actions .btn{width:auto;flex:1;min-width:0;min-height:44px;padding:0 13px;font-size:.76rem}
+  .hero-actions .btn:first-child:last-child{width:100%}
+  .hero-facts{
+    display:flex;
+    flex-wrap:wrap;
+    gap:7px 13px;
+    margin-top:15px;
+    font-size:.68rem;
+  }
+  .hero-facts span:nth-child(n+3){display:none}
+  .premium-rule{display:none}
+  .hero-copy .premium-rule + div{display:none}
+  .launch-status{font-size:.65rem;padding:7px 9px}
+  .hero-ph{min-height:330px;border-radius:20px}
+  .hero-ph .watermark{width:56%}
+  .hero-ph .opening{
+    left:10px;right:10px;bottom:10px;
+    padding:11px 13px;border-radius:14px
+  }
+  .hero-ph .opening b{font-size:.78rem}
+  .hero-ph .opening span,.hero-ph .opening [data-opening-countdown]{font-size:.66rem!important}
+  .hero-ph .label{display:none}
+  .photo-spec{display:none}
+
+  /* Four facts: visually much tighter */
+  .glance{margin-top:16px}
+  .glance-item{padding:10px 8px}
+  .glance-item b{font-size:1.12rem}
+  .glance-item span{font-size:.63rem}
+
+  /* Welcome / editorial: one image only on mobile */
+  .editorial{gap:23px}
+  .editorial-copy .pull{font-size:1.2rem;margin-top:18px;padding-left:13px}
+  .gallery{
+    display:block;
+  }
+  .gallery .ph:first-child{min-height:290px}
+  .gallery .ph:nth-child(n+2){display:none}
+
+  /* CLASSES: horizontal swipe instead of stacking 3 tall cards */
+  .class-guide{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    gap:7px;
+    background:transparent;
+    border:0;
+    border-radius:0;
+    margin:18px -10px 11px;
+    padding:0 10px 4px;
+    scrollbar-width:none;
+  }
+  .class-guide::-webkit-scrollbar{display:none}
+  .class-guide>div{
+    min-width:69vw;
+    scroll-snap-align:start;
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:12px 13px;
+    background:rgba(255,255,255,.52)
+  }
+  .class-guide b{font-size:1rem}
+  .class-guide span{font-size:.68rem}
+
+  .class-grid{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    gap:10px;
+    margin:18px -10px 0;
+    padding:0 10px 7px;
+    scrollbar-width:none;
+  }
+  .class-grid::-webkit-scrollbar{display:none}
+  .class{
+    min-width:82vw;
+    max-width:82vw;
+    scroll-snap-align:center;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:10px;
+    background:rgba(255,255,255,.46)
+  }
+  .class .ph{min-height:165px;border-radius:14px;margin-bottom:12px}
+  .class h3{font-size:1.55rem}
+  .class p{font-size:.77rem;min-height:0;line-height:1.5}
+  .tags{margin:10px 0 12px}
+  .tag{font-size:.59rem}
+  .class .btn{min-height:41px;font-size:.72rem}
+
+  /* WHY LUAVA: compact 2x2 rather than tall */
+  .value-strip{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .value-strip .main{grid-column:1/-1}
+  .value-strip>div{padding:14px 13px}
+  .value-strip b{font-size:1.12rem}
+  .value-strip span{font-size:.65rem}
+
+  /* PRICES: horizontal swipe carousel */
+  .price-head{gap:18px}
+  .credit-note{padding:14px 15px}
+  .credit-note b{font-size:1.25rem}
+  .credit-note span{font-size:.7rem}
+  .prices{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    gap:9px;
+    margin:19px -10px 0;
+    padding:0 10px 8px;
+    scrollbar-width:none;
+  }
+  .prices::-webkit-scrollbar{display:none}
+  .price{
+    min-width:76vw;
+    max-width:76vw;
+    scroll-snap-align:center;
+    min-height:270px;
+    padding:18px 16px;
+  }
+  .price.feature{transform:none}
+  .price h3{font-size:1.65rem}
+  .price .money{font-size:1.28rem;margin:12px 0 3px}
+  .price p{font-size:.7rem;margin-bottom:14px}
+  .price .btn{min-height:41px;font-size:.72rem}
+
+  /* Booking teaser */
+  .booking-teaser{gap:22px}
+  .steps{margin-top:16px}
+  .step{padding:11px 0;grid-template-columns:31px 1fr}
+  .step i{width:31px;height:31px;font-size:.72rem}
+  .step span{font-size:.7rem}
+  .schedule-preview{padding:17px;border-radius:18px}
+  .schedule-preview h3{font-size:1.45rem}
+  .schedule-preview>p{font-size:.7rem;margin-bottom:10px}
+  .slot{grid-template-columns:51px 1fr;padding:10px 0}
+  .slot .time{font-size:.8rem}
+  .slot b{font-size:.8rem}
+  .slot small{font-size:.65rem}
+  .slot .btn{grid-column:2;width:100%;min-height:37px;font-size:.68rem}
+
+  /* First visit: show the info, reduce giant image */
+  .visit{gap:20px}
+  .visit-list{gap:8px}
+  .visit-item{padding-top:10px}
+  .visit-item b{font-size:1.05rem}
+  .visit-item span{font-size:.68rem}
+  .health,.rule-alert{font-size:.7rem;padding:11px 12px}
+  .visit>.ph{min-height:255px!important}
+
+  /* Duo/events teaser: image smaller */
+  .duo-panel{gap:20px}
+  .duo-points{gap:7px}
+  .duo-point{padding-top:9px}
+  .duo-point b{font-size:1rem}
+  .duo-point span{font-size:.66rem}
+  .duo-panel>.ph{min-height:250px!important}
+
+  /* MATCHA + GRIP SOCKS: swipe cards */
+  .life-grid{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    gap:9px;
+    margin-inline:-10px;
+    padding:0 10px 7px;
+    scrollbar-width:none;
+  }
+  .life-grid::-webkit-scrollbar{display:none}
+  .life{
+    min-width:82vw;
+    max-width:82vw;
+    scroll-snap-align:center;
+    padding:14px;
+    gap:12px;
+  }
+  .life .ph{min-height:180px}
+  .life h3{font-size:1.5rem}
+  .life p{font-size:.72rem}
+
+  /* Location */
+  .location{gap:9px}
+  .address{padding:19px;border-radius:18px}
+  .address h3{font-size:1.65rem}
+  .address p{font-size:.73rem}
+  .address .fact{padding-top:9px;margin-top:9px}
+  .map{min-height:235px;border-radius:18px}
+
+  /* Hide the future reviews teaser on mobile; full reviews can come later */
+  .section.tight:has(.tag){padding:22px 0}
+  .section.tight:has(.tag) .wrap>div{display:none}
+
+  /* HOME FAQ: only show first 4; full FAQ has its own page */
+  #faq .faq details:nth-of-type(n+5){display:none}
+  .faq{margin-top:20px}
+  .faq summary{padding:14px 0;font-size:.78rem}
+  .faq details p{font-size:.73rem;line-height:1.55;margin-bottom:14px}
+
+  /* CTA */
+  .cta{padding:45px 0 96px}
+  .cta-box{padding:23px 18px;border-radius:20px;gap:17px}
+  .cta-box .hero-actions{width:100%}
+
+  /* Footer */
+  .footer{padding:36px 0 88px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:22px}
+  .footer-grid>div:first-child{grid-column:1/-1}
+  .footer-grid>div:last-child{grid-column:auto}
+  .footer .logo{width:90px}
+  .footer h4{font-size:.8rem}
+  .footer p,.footer a,.footer span{font-size:.66rem}
+  .footer-bottom{font-size:.59rem}
+
+  /* Bottom sticky bar: compact */
+  .mobile-sticky{
+    left:7px;right:7px;bottom:7px;
+    padding:6px;border-radius:15px;gap:6px
+  }
+  .mobile-sticky .btn{
+    min-height:42px;
+    font-size:.72rem;
+  }
+
+  /* BOOKING PAGE */
+  .bsport-frame{padding:14px;border-radius:17px}
+  .bsport-frame .ph{min-height:190px}
+  .filters{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:3px;
+    scrollbar-width:none;
+  }
+  .filters::-webkit-scrollbar{display:none}
+  .filter{white-space:nowrap;padding:8px 10px;font-size:.68rem}
+  .day{margin-bottom:20px}
+  .day h3{font-size:1.35rem}
+  .day .book-slot{
+    grid-template-columns:50px 1fr;
+    padding:11px 0;
+  }
+  .book-slot .free{display:none}
+  .book-slot .btn{
+    grid-column:2;
+    min-height:38px;
+    width:100%;
+    font-size:.68rem;
+  }
+  .checkout{padding:16px;border-radius:17px}
+  .checkout h3{font-size:1.55rem}
+  .selected{padding:11px;margin:12px 0}
+  .field input,.field select,.field textarea{padding:10px 11px}
+  .payments span{font-size:.58rem;padding:6px 7px}
+
+  /* CREDIT PAGE */
+  .credit-explain-grid{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    margin-inline:-10px;
+    padding:0 10px 6px;
+    gap:8px;
+    scrollbar-width:none;
+  }
+  .credit-explain-grid::-webkit-scrollbar{display:none}
+  .explain-card{
+    min-width:76vw;
+    scroll-snap-align:center;
+    padding:16px;
+  }
+  .explain-card b{font-size:1.25rem}
+  .explain-card p{font-size:.72rem}
+  .checkout-mock{min-height:250px}
+
+  /* BEGINNER PAGE */
+  .beginner-grid{gap:22px}
+  .beginner-grid>.ph{min-height:290px!important}
+  .beginner-points{grid-template-columns:1fr 1fr;gap:7px}
+  .beginner-point{padding-top:9px}
+  .beginner-point b{font-size:1rem}
+  .beginner-point span{font-size:.66rem}
+
+  /* STUDIO PAGE */
+  .story-grid{gap:22px}
+  .story-grid>.ph{min-height:290px!important}
+  .story-card{padding:16px}
+  .icon-grid{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    gap:8px;
+    margin-inline:-10px;
+    padding:0 10px 6px;
+    scrollbar-width:none;
+  }
+  .icon-grid::-webkit-scrollbar{display:none}
+  .icon-card{min-width:62vw;scroll-snap-align:center}
+  .timeline-row{grid-template-columns:62px 1fr;padding:10px 0}
+  .timeline-row b{font-size:1rem}
+  .timeline-row span{font-size:.7rem}
+
+  /* EVENTS PAGE */
+  .event-grid{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    gap:9px;
+    margin-inline:-10px;
+    padding:0 10px 7px;
+    scrollbar-width:none;
+  }
+  .event-grid::-webkit-scrollbar{display:none}
+  .event-card{
+    min-width:80vw;
+    max-width:80vw;
+    scroll-snap-align:center;
+  }
+  .event-card .ph{min-height:155px}
+  .event-copy{padding:14px}
+  .event-copy h3{font-size:1.4rem}
+  .event-copy p{font-size:.7rem}
+
+  /* FAQ PAGE */
+  .full-faq-layout{gap:20px}
+  .faq-index{
+    display:flex;
+    overflow-x:auto;
+    position:static;
+    gap:6px;
+    border:0;
+    background:transparent;
+    padding:0 0 6px;
+    scrollbar-width:none;
+  }
+  .faq-index::-webkit-scrollbar{display:none}
+  .faq-index>b{display:none}
+  .faq-index a{
+    white-space:nowrap;
+    padding:8px 10px;
+    background:rgba(255,255,255,.5);
+    border:1px solid var(--line);
+    border-radius:999px;
+    font-size:.66rem;
+  }
+  .faq-group{margin-bottom:27px}
+  .faq-group h2{font-size:1.55rem}
+
+  /* CONTACT */
+  .contact-layout{gap:10px}
+  .contact-panel,.contact-form{padding:18px;border-radius:17px}
+  .contact-form h2{font-size:1.55rem}
+
+  /* ACCOUNT */
+  .account-shell{gap:10px}
+  .account-side{padding:17px;border-radius:17px}
+  .account-nav{
+    display:flex;
+    overflow-x:auto;
+    gap:5px;
+    margin-top:15px;
+    scrollbar-width:none;
+  }
+  .account-nav::-webkit-scrollbar{display:none}
+  .account-nav a{white-space:nowrap;font-size:.68rem;padding:8px 9px}
+  .credit-balance{padding:19px;border-radius:17px}
+  .credit-balance strong{font-size:3rem}
+  .dash-card{padding:16px;border-radius:17px}
+  .dashboard-grid{grid-template-columns:1fr}
+  .history-row{font-size:.7rem}
+
+  /* GIFTS */
+  .voucher-card{min-height:290px;padding:20px}
+  .voucher-card h2{font-size:2.3rem}
+  .amounts{grid-template-columns:repeat(3,1fr)}
+  .amount{padding:10px;font-size:.75rem}
+
+  /* Keep screens light: remove large decorative placeholders on secondary pages */
+  .page-hero + .section .ph.checkout-mock{min-height:230px}
+}
+
+/* Ultra-small iPhones */
+@media(max-width:390px){
+  .h1{font-size:2.95rem}
+  .hero-actions .btn{font-size:.71rem;padding:0 10px}
+  .class{min-width:85vw;max-width:85vw}
+  .price{min-width:80vw;max-width:80vw}
+  .life{min-width:85vw;max-width:85vw}
+}
+
 </style>
 </head>
 <body><div><h1>LUAVA Staging läuft.</h1><p>Wenn du diese Seite siehst, funktioniert GitHub Pages grundsätzlich.</p><p><a href="index.html">Zur Website →</a></p></div></body>

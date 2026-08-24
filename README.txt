@@ -1,18 +1,13 @@
-LUAVA WEBSITE V12 – GITHUB PAGES STAGING BUILD
+LUAVA WEBSITE V13 – MOBILE-FIRST STAGING BUILD
 
-Dieses Paket basiert auf V11 und ist speziell für GitHub Pages vorbereitet.
+Diese Version basiert auf der bereits online gestellten GitHub-Pages-Version,
+optimiert die mobile Darstellung aber grundlegend.
 
-NEU
-- GitHub Actions Workflow für automatisches Pages-Deployment
-- .nojekyll
-- noindex/nofollow für alle HTML-Seiten
-- robots.txt blockiert Suchmaschinen
-- STAGING-Badge
-- status.html
-- GITHUB_PAGES_SETUP.txt
+Desktop bleibt weitgehend unverändert.
 
-WICHTIG
-index.html muss im Root des Repositories liegen.
-GitHub Pages Source: GitHub Actions.
+Für GitHub:
+- gesamten Inhalt dieses Ordners über die bestehenden Repository-Dateien hochladen
+- Commit z. B. "Mobile-first optimization V13"
+- GitHub Pages aktualisiert sich danach automatisch
 
-Dieses Paket ist NUR für Staging, nicht für finalen Livegang.
+Details: MOBILE_CHANGES_V13.txt
