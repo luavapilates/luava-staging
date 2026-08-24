@@ -1,0 +1,242 @@
+LUAVA × BSPORT – EINRICHTUNGSPLAN
+
+ZIEL
+bsport soll nur die Live-Funktionen übernehmen:
+- Kundenkonto
+- Credits / Pässe
+- Kursplan
+- Buchungen
+- Warteliste
+- Stornierungen
+- Online-Zahlungen
+Die LUAVA-Website bleibt die visuelle Markenwelt.
+
+--------------------------------------------------
+1. STUDIO
+--------------------------------------------------
+Name: LUAVA Pilates
+Adresse: Güterstraße 26, 75177 Pforzheim
+Standorte: 1
+Reformer: 5
+
+--------------------------------------------------
+2. CLASS-TYPEN
+--------------------------------------------------
+A) Anfänger
+- Dauer: 50 Minuten
+- Kapazität: 5
+- Preis: 3 Credits
+- für neue Kunden empfohlen, aber nicht verpflichtend
+
+B) All Level
+- Dauer: 50 Minuten
+- Kapazität: 5
+- Preis: 3 Credits
+
+C) Fortgeschrittene
+- Dauer: 50 Minuten
+- Kapazität: 5
+- Preis: 3 Credits
+
+D) Events
+- individuell
+- 4 oder 5 Credits je nach Event
+
+E) Duo Session
+- separates Angebot
+- Preis / Credit-Zahl noch final festlegen
+
+--------------------------------------------------
+3. CREDIT-PAKETE
+--------------------------------------------------
+REGULÄR:
+12 Credits = 105 €
+24 Credits = 195 €
+42 Credits = 315 €
+66 Credits = 450 €
+
+GÜLTIGKEIT:
+12 Credits = 1 Jahr
+24 Credits = 1 Jahr
+42 Credits = 2 Jahre
+66 Credits = 2 Jahre
+
+REGELN:
+- personengebunden
+- nicht übertragbar
+- nicht mit Freunden teilbar
+- pro Person eigenes Konto
+- kein monatliches Abo
+
+OPENING SPECIAL:
+10 % Rabatt:
+12 Credits = 94,50 €
+24 Credits = 175,50 €
+42 Credits = 283,50 €
+66 Credits = 405 €
+
+WICHTIG:
+Laufzeit des Opening-Rabatts noch final festlegen.
+
+--------------------------------------------------
+4. EINZELTICKET
+--------------------------------------------------
+Reformer Drop-in / Single Class:
+28 €
+
+--------------------------------------------------
+5. BUCHUNGSREGELN
+--------------------------------------------------
+Vorausbuchung:
+- zunächst ca. 14 Tage
+- später eventuell 21 Tage
+
+Kurzfristige Buchung:
+- bis ca. 30 Minuten vor Class-Beginn
+- nur solange Platz verfügbar
+
+Kapazität:
+- 5 Personen
+
+Warteliste:
+- aktivieren
+- automatisches Nachrücken aktivieren
+
+--------------------------------------------------
+6. STORNIERUNG
+--------------------------------------------------
+Kostenlose / vollständige Credit-Rückgabe:
+- bis 24 Stunden vor Beginn
+
+Late Cancellation:
+- unter 24 Stunden keine Credit-/Ticket-Rückgabe
+- gilt grundsätzlich auch bei kurzfristiger Krankheit
+
+Technisch testen:
+- rechtzeitige Stornierung -> Credits automatisch zurück
+- Late Cancellation -> Credits bleiben verbraucht
+- Warteliste -> Platz automatisch an nächste Person
+
+--------------------------------------------------
+7. ZAHLUNGEN
+--------------------------------------------------
+ONLINE AKTIVIEREN:
+- Kredit-/Debitkarte
+- PayPal
+- Apple Pay
+- Google Pay
+
+NICHT GEWÜNSCHT:
+- SEPA
+
+VOR ORT:
+- Karte
+- Bar
+
+WICHTIG:
+Auch bei Vor-Ort-Kauf müssen Credit-Pakete dem persönlichen Kundenkonto zugeordnet werden.
+
+--------------------------------------------------
+8. KUNDENKONTO
+--------------------------------------------------
+Kunde soll sehen können:
+- aktuellen Credit-Stand
+- nächste Buchungen
+- vergangene Classes
+- Stornierungsmöglichkeiten
+- gekaufte Pässe / Credits
+- persönliche Daten
+- Zahlungsinformationen
+
+WEBSITE:
+konto.html ist aktuell nur die visuelle Demo.
+Beim Livegang offiziellen bsport-Mitgliederbereich verwenden/verknüpfen.
+
+--------------------------------------------------
+9. WEBSITE WIDGET
+--------------------------------------------------
+bsport Website-Buchungswidget aktivieren.
+
+Auf unserer Website:
+buchen.html
+
+Im Code suchen:
+BSPORT_WIDGET_START
+
+Dort den offiziellen bsport Widget-Code einsetzen.
+
+Unbedingt testen:
+- mobile Darstellung
+- Live-Restplätze
+- Class-Filter
+- Warteliste
+- Login
+- Kauf eines Credit-Pakets
+- bestehende Credits verwenden
+- Single Class kaufen
+
+--------------------------------------------------
+10. EMAILS
+--------------------------------------------------
+Buchungsbestätigung:
+- Class
+- Datum
+- Uhrzeit
+- Adresse
+- Hinweise zum ersten Besuch
+- Grip Socks Pflicht
+- 15 Minuten früher kommen
+
+Ton:
+warm, kurz, hochwertig.
+
+Beispiel:
+"Deine LUAVA Class ist gebucht. Wir freuen uns darauf,
+dir 50 Minuten nur für dich zu schenken – zum Bewegen,
+Abschalten und Ankommen."
+
+Zusätzliche Class-Erinnerung:
+aktuell NICHT gewünscht.
+
+--------------------------------------------------
+11. TEILNAHMEREGELN
+--------------------------------------------------
+Grip Socks:
+- verpflichtend
+
+Barfuß:
+- nicht gestattet / nicht erwünscht
+
+Straßenschuhe:
+- direkt am Eingang ausziehen
+
+Handy:
+- lautlos
+- während Class nicht nutzen
+
+Schwangerschaft:
+- Teilnahme NICHT möglich
+
+Gesundheit:
+- relevante Verletzungen / Operationen / Einschränkungen vorher medizinisch klären
+- Trainerin vor Class informieren
+
+--------------------------------------------------
+12. WAS WIR BSPORT IN DER DEMO ZEIGEN LASSEN SOLLTEN
+--------------------------------------------------
+Bitte in einer bsport-Demo LIVE zeigen lassen:
+
+1. Neukunde erstellt Konto
+2. kauft 12 Credits
+3. bucht Anfänger-Class für 3 Credits
+4. sieht danach 9 Credits
+5. storniert >24h vorher
+6. sieht wieder 12 Credits
+7. bucht ausgebuchte Class / Warteliste
+8. anderer Kunde storniert
+9. Kunde rückt automatisch nach
+10. kauft LUAVA Grip Socks am Empfang
+11. bezahlt ein Credit-Paket vor Ort
+12. Credit-Paket wird dem gleichen Kundenkonto gutgeschrieben
+
+Wenn dieser Flow sauber funktioniert, passt bsport zum LUAVA-Konzept.

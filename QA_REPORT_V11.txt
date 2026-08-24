@@ -1,0 +1,24 @@
+LUAVA WEBSITE V11 – QA REPORT
+
+Geprüfte HTML-Seiten: 15
+Gefundene technische Probleme vor V11: 0
+
+ERGEBNIS
+- Keine kaputten internen HTML-Links gefunden.
+- Keine doppelten IDs gefunden.
+- Jede geprüfte Seite hat Title + Meta Description.
+
+V11 ZUSÄTZLICH
+- Netlify-Konfiguration
+- Vercel-Konfiguration
+- Apache/.htaccess-Fallback
+- 404-Redirect-Konfiguration
+- Sicherheitsheader vorbereitet
+- Preview-Badge eingebaut (vor Livegang entfernen)
+
+NOCH NICHT ECHT LIVE
+- bsport Widget
+- echter Kontaktformular-Versand
+- echte Domain
+- finale Fotos
+- finale Rechtstexte

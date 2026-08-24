@@ -1,0 +1,40 @@
+LUAVA – DEPLOYMENT GUIDE
+
+V11 kann als statische Website auf praktisch jedem Hosting laufen.
+
+OPTION A – NETLIFY
+1. ZIP entpacken.
+2. Den Ordner LUAVA_Website_V11 auf Netlify als neue Site hochladen.
+3. netlify.toml wird automatisch erkannt.
+4. Danach eigene Domain verbinden.
+5. HTTPS aktivieren / prüfen.
+6. sitemap.xml + robots.txt auf echte Domain ändern.
+
+OPTION B – VERCEL
+1. Ordner als Projekt deployen.
+2. vercel.json ist vorbereitet.
+3. Eigene Domain verbinden.
+4. sitemap.xml + robots.txt anpassen.
+
+OPTION C – KLASSISCHES WEBHOSTING
+1. Alle Dateien per FTP/SFTP in das öffentliche Web-Verzeichnis laden.
+2. .htaccess wird für 404 und grundlegende Header mitgeliefert.
+3. Domain auf das Verzeichnis zeigen lassen.
+
+VOR LIVEGANG UNBEDINGT
+1. PREVIEW-Badge aus allen HTML-Dateien entfernen.
+2. DEINE-DOMAIN.DE in sitemap.xml + robots.txt ersetzen.
+3. bsport Widget / Mitgliederkonto live anbinden.
+4. finale Rechtstexte einsetzen.
+5. Kontaktformular live machen.
+6. echte Fotos einsetzen.
+7. mobile Buchung vollständig testen.
+
+EMPFOHLENE LIVE-REIHENFOLGE
+1. Staging-Domain / temporäre URL
+2. bsport anbinden
+3. Fotos einsetzen
+4. Rechtliches
+5. QA auf iPhone / Android / Desktop
+6. echte Domain
+7. Launch

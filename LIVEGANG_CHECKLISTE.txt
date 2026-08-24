@@ -1,0 +1,55 @@
+LUAVA – LIVEGANG CHECKLISTE
+
+TECHNIK
+[ ] finale Domain festlegen
+[ ] Hosting / Website-Plattform festlegen
+[ ] SSL aktiv
+[ ] bsport Konto vollständig eingerichtet
+[ ] offiziellen bsport Website-Widget-Code erhalten
+[ ] bsport Live-Kursplan auf buchen.html einsetzen
+[ ] Kundenkonto / Credits / Warteliste testen
+[ ] Online-Zahlungen testen: Kreditkarte, PayPal, Apple Pay, Google Pay
+[ ] Vor-Ort-Zahlungen in bsport-Prozess prüfen: Karte + Bar
+[ ] Google Maps einbetten
+[ ] Kontaktformular wirklich versenden lassen
+
+CONTENT
+[ ] professionelle Studiofotos
+[ ] Reformer-Class-Fotos
+[ ] Matcha-Fotos
+[ ] LUAVA Grip-Socks-Fotos
+[ ] Parkplatz-/Anfahrtsinfo final gegenprüfen
+[ ] Telefonnummer einsetzen, sobald vorhanden
+[ ] Opening-Rabatt Laufzeit final festlegen
+
+RECHT
+[ ] Impressum geprüft
+[ ] Datenschutz geprüft
+[ ] AGB geprüft
+[ ] Widerruf geprüft
+[ ] Teilnahmebedingungen geprüft
+[ ] Gutscheinbedingungen geprüft
+[ ] Credit-Gültigkeit / Nichtübertragbarkeit enthalten
+[ ] 24-Stunden-Stornierungsregel enthalten
+[ ] Schwangerschaft: Teilnahme nicht möglich
+[ ] Cookie-Consent nur für tatsächlich eingesetzte Dienste konfigurieren
+
+TESTING
+[ ] iPhone Safari
+[ ] Android Chrome
+[ ] Mac Safari
+[ ] Desktop Chrome
+[ ] alle Buttons testen
+[ ] Buchung von Startseite bis Bestätigung testen
+[ ] ausgebuchte Class / Warteliste testen
+[ ] Stornierung + Credit-Rückgabe testen
+[ ] Opening-Rabatt testen
+
+BSPORT / KUNDENKONTO
+[ ] Mein-Konto / Mitgliederbereich festlegen
+[ ] Login-Link auf Website einbauen
+[ ] Credit-Stand live testen
+[ ] Class-Verlauf live testen
+[ ] rechtzeitige Stornierung im Konto testen
+[ ] Credit-Rückgabe kontrollieren
+[ ] BSPORT_SETUP_LUAVA.txt Punkt für Punkt abarbeiten

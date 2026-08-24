@@ -1,0 +1,50 @@
+LUAVA STAGING – GITHUB PAGES
+
+DIESES PAKET IST FÜR EINE TEMPORÄRE STAGING-URL VORBEREITET.
+
+EMPFOHLENER REPOSITORY-NAME
+luava-staging
+
+SCHRITT 1 – REPOSITORY ERSTELLEN
+Auf GitHub:
+1. New repository
+2. Repository name: luava-staging
+3. Private oder Public nach Wunsch
+4. Kein README / .gitignore automatisch hinzufügen, wenn du dieses Paket direkt hochlädst.
+
+SCHRITT 2 – DATEIEN HOCHLADEN
+Den INHALT dieses Ordners ins Repository laden.
+Wichtig:
+- index.html muss direkt im Root liegen
+- .github/workflows/deploy-pages.yml muss erhalten bleiben
+- .nojekyll muss erhalten bleiben
+
+SCHRITT 3 – GITHUB PAGES AKTIVIEREN
+Repository -> Settings -> Pages
+Unter "Build and deployment":
+Source = GitHub Actions
+
+SCHRITT 4 – WORKFLOW
+Sobald auf main gepusht wurde:
+Actions -> Deploy LUAVA Staging to GitHub Pages
+
+Nach erfolgreichem Workflow zeigt GitHub die veröffentlichte URL an.
+
+TYPISCHE URL
+https://DEIN-GITHUB-NAME.github.io/luava-staging/
+
+WICHTIG
+Diese Staging-Version enthält:
+- noindex / nofollow
+- robots.txt blockiert Suchmaschinen
+- sichtbaren STAGING-Badge
+Damit sie nicht versehentlich wie die Live-Website behandelt wird.
+
+NACH DEM TEST
+Die spätere Live-Version bekommt:
+- keinen STAGING-Badge
+- indexierbare robots.txt
+- echte sitemap.xml mit finaler Domain
+- bsport live
+- echte Bilder
+- finale Rechtstexte
