@@ -1,0 +1,77 @@
+
+/* =========================================================
+   LUAVA V39 — FULL-BLEED STUDIO VIDEO + TIMELINE TITLE FIX
+   ========================================================= */
+
+/* VIDEO: true full browser width, no white side margins */
+.v38-studio-video-section{
+  padding:0!important;
+  margin:0!important;
+  width:100%!important;
+  max-width:none!important;
+  background:#d6c1af!important;
+  overflow:hidden!important;
+}
+
+.v38-studio-video-section > .wrap{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+}
+
+.v38-studio-video-frame{
+  width:100vw!important;
+  max-width:none!important;
+  aspect-ratio:16 / 9!important;
+  margin:0!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  overflow:hidden!important;
+  position:relative!important;
+  left:50%!important;
+  transform:translateX(-50%)!important;
+}
+
+.v38-studio-video{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  display:block!important;
+}
+
+/* TIMELINE: allow headline to wrap naturally again */
+@media(min-width:981px){
+  .v37-timeline-title{
+    white-space:normal!important;
+    max-width:760px!important;
+    font-size:clamp(3rem,4.2vw,4.45rem)!important;
+    line-height:.98!important;
+    margin-bottom:14px!important;
+  }
+
+  /* keeps the intended 2-line rhythm instead of clipping */
+  .v38-timeline-layout{
+    grid-template-columns:minmax(0,1.22fr) minmax(350px,.78fr)!important;
+    gap:48px!important;
+    align-items:center!important;
+  }
+
+  .v38-timeline-image{
+    width:100%!important;
+    aspect-ratio:4 / 5!important;
+    min-height:0!important;
+    height:auto!important;
+  }
+}
+
+/* Mobile also full-bleed */
+@media(max-width:980px){
+  .v38-studio-video-section{
+    padding:0!important;
+  }
+
+  .v38-studio-video-frame{
+    border-radius:0!important;
+  }
+}
