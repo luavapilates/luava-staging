@@ -1,0 +1,66 @@
+
+/* LUAVA V18 — universal cinematic video opener */
+.luava-video-hero{
+  position:relative;width:100%;height:min(78vh,820px);min-height:620px;
+  overflow:hidden;background:#cdb8a7;isolation:isolate
+}
+.luava-video-bg{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center
+}
+.luava-video-shade{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to bottom,rgba(29,24,21,.08),rgba(29,24,21,.18)),
+             radial-gradient(circle at center,transparent 24%,rgba(35,29,25,.18) 100%)
+}
+.luava-video-content{
+  position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;padding:40px 24px 84px
+}
+.luava-video-logo{
+  width:min(48vw,540px);max-height:180px;object-fit:contain;
+  filter:brightness(0) invert(1);opacity:.97
+}
+.luava-video-sub{
+  margin-top:20px;color:rgba(255,255,255,.9);font-size:.68rem;
+  font-weight:800;letter-spacing:.22em
+}
+.luava-video-cta{
+  margin-top:25px;min-height:48px;display:inline-flex;align-items:center;justify-content:center;
+  padding:0 22px;border:1px solid rgba(255,255,255,.68);border-radius:999px;
+  color:white;background:rgba(255,255,255,.08);backdrop-filter:blur(8px);
+  font-size:.78rem;font-weight:800;text-decoration:none
+}
+.luava-video-cta:hover{background:#fff;color:#2b2522}
+.luava-scroll-cue{
+  position:absolute;z-index:3;left:50%;bottom:23px;transform:translateX(-50%);
+  display:grid;justify-items:center;gap:8px;color:#fff;text-decoration:none
+}
+.luava-scroll-cue span{font-size:.52rem;font-weight:800;letter-spacing:.18em}
+.luava-scroll-cue i{
+  display:block;width:1px;height:34px;background:rgba(255,255,255,.75);
+  animation:luavaScroll 1.8s ease-in-out infinite
+}
+@keyframes luavaScroll{
+  0%,100%{transform:scaleY(.55);transform-origin:top;opacity:.55}
+  50%{transform:scaleY(1);transform-origin:top;opacity:1}
+}
+#after-video{scroll-margin-top:90px}
+
+/* The old homepage hero is hidden; the rest of each version continues normally. */
+.desktop-home > .hero:first-child{display:none!important}
+.mobile-home > .m16-hero:first-child{display:none!important}
+
+@media(max-width:680px){
+  .luava-video-hero{height:72svh;min-height:520px;max-height:700px}
+  .luava-video-content{padding:28px 20px 74px}
+  .luava-video-logo{width:min(74vw,340px);max-height:120px}
+  .luava-video-sub{margin-top:15px;font-size:.56rem;letter-spacing:.18em}
+  .luava-video-cta{margin-top:19px;min-height:44px;font-size:.72rem;padding:0 18px}
+  .luava-scroll-cue{bottom:17px}
+  .luava-scroll-cue i{height:26px}
+}
+@media(prefers-reduced-motion:reduce){
+  .luava-video-bg{display:none}
+  .luava-scroll-cue i{animation:none}
+}

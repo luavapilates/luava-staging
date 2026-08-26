@@ -15,6 +15,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ExerciseGym", "name": "LUAVA Pilates", "description": "Reformer Pilates Studio in Pforzheim mit Kleingruppen von maximal fünf Personen.", "email": "luavapilates@gmail.com", "address": {"@type": "PostalAddress", "streetAddress": "Güterstraße 26", "postalCode": "75177", "addressLocality": "Pforzheim", "addressCountry": "DE"}, "url": "https://www.example.com/"}</script>
 <script src="assets/site-config.js"></script>
 <meta content="noindex,nofollow,noarchive" name="robots"/>
+<link rel="stylesheet" href="assets/video-hero.css">
 </head><body><a class="skip-link" href="#main-content">Zum Inhalt springen</a>
 <div class="announce dynamic-opening" data-prelaunch-only=""><strong>OPENING 04.10.2026</strong> · 10 % auf alle Credit-Pakete zur Eröffnung</div>
 <header class="header">
@@ -38,7 +39,23 @@
 </div>
 </div>
 </header>
-<main id="main-content"><div class="desktop-home">
+<main id="main-content">
+<section class="luava-video-hero" aria-label="LUAVA Pilates Video-Opener">
+  <video class="luava-video-bg" autoplay muted loop playsinline preload="metadata" poster="assets/luava-hero-poster.jpg">
+    <source src="assets/luava-hero.mp4" type="video/mp4">
+  </video>
+  <div class="luava-video-shade"></div>
+  <div class="luava-video-content">
+    <img class="luava-video-logo" src="luava-logo.png" alt="LUAVA Pilates">
+    <div class="luava-video-sub">REFORMER PILATES · PFORZHEIM</div>
+    <a class="luava-video-cta" href="buchen.html">Jetzt Class buchen</a>
+  </div>
+  <a class="luava-scroll-cue" href="#after-video" aria-label="Weiter zur Website">
+    <span>ENTDECKEN</span><i></i>
+  </a>
+</section>
+<div id="after-video"></div>
+<div class="desktop-home">
 <section class="hero"><div class="wrap">
 <div class="hero-grid">
 <div class="hero-copy">
@@ -338,4 +355,21 @@
 </script>
 <script src="assets/app.js"></script>
 <div class="site-status">STAGING <span>· CLEAN V14</span></div>
+
+<script>
+(function(){
+  const hero=document.querySelector('.luava-video-hero');
+  const sticky=document.querySelector('.mobile-sticky');
+  if(!hero||!sticky||!('IntersectionObserver' in window)) return;
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(window.innerWidth<=680){
+        sticky.style.opacity=entry.isIntersecting?'0':'1';
+        sticky.style.pointerEvents=entry.isIntersecting?'none':'auto';
+      }
+    });
+  },{threshold:.18});
+  io.observe(hero);
+})();
+</script>
 </body></html>
