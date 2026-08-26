@@ -1,0 +1,145 @@
+
+/* =========================================================
+   LUAVA V28 — FINAL EVENTS SECTION FIX
+   Correct selectors for the REAL markup:
+   .duo-points + .hero-actions
+   ========================================================= */
+
+@media (min-width:981px){
+
+  /* Entire section uses the same structure as "Was muss ich wissen?" */
+  .desktop-home #specials .duo-panel{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    grid-template-areas:
+      "heading heading"
+      "info image"
+      "button button"!important;
+    column-gap:42px!important;
+    row-gap:28px!important;
+    align-items:stretch!important;
+  }
+
+  /* Unwrap the original left wrapper so its children can occupy grid areas */
+  .desktop-home #specials .duo-panel > div:first-child{
+    display:contents!important;
+  }
+
+  .desktop-home #specials .eyebrow{
+    grid-area:heading!important;
+    margin:0 0 10px!important;
+  }
+
+  .desktop-home #specials .h2{
+    grid-area:heading!important;
+    margin:22px 0 0!important;
+    white-space:nowrap!important;
+    font-size:clamp(3rem,4.15vw,4.65rem)!important;
+    line-height:.96!important;
+  }
+
+  .desktop-home #specials .lead{
+    display:none!important;
+  }
+
+  /* THIS is the actual four-item block in the HTML */
+  .desktop-home #specials .duo-points{
+    grid-area:info!important;
+    box-sizing:border-box!important;
+    width:100%!important;
+    min-height:420px!important;
+    height:100%!important;
+    margin:0!important;
+    padding:24px!important;
+
+    border:1px solid var(--line)!important;
+    border-radius:22px!important;
+    background:rgba(255,255,255,.46)!important;
+
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    grid-template-rows:1fr 1fr!important;
+    gap:0!important;
+    overflow:hidden!important;
+  }
+
+  .desktop-home #specials .duo-point{
+    box-sizing:border-box!important;
+    margin:0!important;
+    padding:24px!important;
+
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+    align-items:flex-start!important;
+  }
+
+  /* Internal 2x2 separators */
+  .desktop-home #specials .duo-point:nth-child(1),
+  .desktop-home #specials .duo-point:nth-child(2){
+    border-bottom:1px solid var(--line)!important;
+  }
+
+  .desktop-home #specials .duo-point:nth-child(1),
+  .desktop-home #specials .duo-point:nth-child(3){
+    border-right:1px solid var(--line)!important;
+  }
+
+  .desktop-home #specials .duo-point b{
+    display:block!important;
+    margin:0 0 7px!important;
+    font-family:var(--serif)!important;
+    font-size:1.22rem!important;
+    line-height:1.1!important;
+    font-weight:500!important;
+  }
+
+  .desktop-home #specials .duo-point span{
+    display:block!important;
+    max-width:210px!important;
+    color:var(--muted)!important;
+    font-size:.73rem!important;
+    line-height:1.48!important;
+  }
+
+  /* Right image matches the left box exactly */
+  .desktop-home #specials .duo-panel > .ph{
+    grid-area:image!important;
+    box-sizing:border-box!important;
+    width:100%!important;
+    min-height:420px!important;
+    height:100%!important;
+    margin:0!important;
+    border-radius:22px!important;
+  }
+
+  /* The OUTER hero-actions is the grid item, not the inner wrapper */
+  .desktop-home #specials .hero-actions{
+    grid-area:button!important;
+    width:100%!important;
+    margin:0!important;
+    padding:0!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+  }
+
+  .desktop-home #specials .v27-events-cta,
+  .desktop-home #specials .v26-events-cta{
+    width:auto!important;
+    margin:0!important;
+    display:block!important;
+  }
+
+  .desktop-home #specials .hero-actions .btn{
+    width:280px!important;
+    max-width:280px!important;
+    margin:0 auto!important;
+  }
+}
+
+@media (min-width:981px) and (max-width:1180px){
+  .desktop-home #specials .h2{
+    white-space:normal!important;
+  }
+}
