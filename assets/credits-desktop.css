@@ -1,0 +1,73 @@
+
+/* LUAVA V21 — Pricing cards one row on desktop only */
+@media (min-width: 981px) {
+  .prices {
+    display: grid !important;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+    gap: 10px !important;
+    align-items: stretch !important;
+  }
+
+  .prices .price {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: 330px !important;
+    padding: 22px 18px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .prices .price h3 {
+    font-size: 1.72rem !important;
+    white-space: nowrap;
+  }
+
+  .prices .price .money {
+    font-size: 1.35rem !important;
+  }
+
+  .prices .price p {
+    font-size: .72rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .prices .price .btn {
+    margin-top: auto !important;
+    width: 100% !important;
+  }
+
+  .prices .price.feature {
+    transform: none !important;
+  }
+}
+
+/* Intermediate desktop widths: slightly tighter */
+@media (min-width: 981px) and (max-width: 1180px) {
+  .prices {
+    gap: 8px !important;
+  }
+
+  .prices .price {
+    padding: 20px 14px !important;
+  }
+
+  .prices .price h3 {
+    font-size: 1.5rem !important;
+  }
+
+  .prices .price .money {
+    font-size: 1.2rem !important;
+  }
+
+  .prices .price p {
+    font-size: .66rem !important;
+  }
+}
+
+/* Mobile/tablet stays exactly as before */
+@media (max-width: 980px) {
+  .prices {
+    /* Existing LUAVA mobile swipe behavior from styles.css remains active */
+  }
+}
