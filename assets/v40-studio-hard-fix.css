@@ -1,0 +1,172 @@
+
+/* =========================================================
+   LUAVA V40 — FINAL STUDIO HARD FIX
+   One stylesheet only. No V37/V38/V39 conflicts.
+   ========================================================= */
+
+/* =========================
+   FULL-WIDTH VIDEO BAND
+   ========================= */
+.v40-studio-video-band{
+  display:block;
+  width:100vw;
+  max-width:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  overflow:hidden;
+  background:#d5c1b0;
+  aspect-ratio:16 / 9;
+}
+
+.v40-studio-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+/* =========================
+   SPACES
+   ========================= */
+@media(min-width:981px){
+  .v40-spaces-title{
+    white-space:nowrap;
+    font-size:clamp(3.1rem,4.55vw,4.8rem);
+    line-height:.97;
+  }
+}
+
+/* =========================
+   TIMELINE SECTION
+   ========================= */
+.v40-timeline-layout{
+  display:grid;
+  grid-template-columns:minmax(0, 1fr) 360px;
+  gap:54px;
+  align-items:center;
+}
+
+.v40-timeline-title{
+  margin-bottom:14px;
+}
+
+.v40-timeline-image{
+  width:100%;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:4 / 5;
+  align-self:center;
+}
+
+.v40-timeline{
+  width:100%;
+  margin-top:20px;
+}
+
+.v40-timeline .timeline-row{
+  display:grid;
+  grid-template-columns:120px minmax(0, 1fr);
+  gap:22px;
+  align-items:center;
+  min-height:58px;
+  padding:14px 0;
+}
+
+.v40-timeline .timeline-row b{
+  display:block;
+  white-space:nowrap;
+  line-height:1;
+  font-size:1.12rem;
+}
+
+.v40-timeline .timeline-row span{
+  display:block;
+  line-height:1.4;
+}
+
+@media(min-width:981px){
+  .v40-timeline-section{
+    padding-top:58px!important;
+    padding-bottom:64px!important;
+  }
+
+  .v40-timeline-section > .wrap{
+    max-width:1180px!important;
+  }
+
+  .v40-timeline-title{
+    white-space:normal!important;
+    max-width:720px;
+    font-size:clamp(3rem,4.1vw,4.35rem)!important;
+    line-height:.97!important;
+  }
+
+  .v40-timeline-layout > div:first-child{
+    min-width:0;
+    overflow:visible;
+  }
+
+  .v40-timeline-layout .lead{
+    max-width:720px;
+    margin-bottom:0;
+  }
+
+  .v40-timeline-image{
+    width:360px!important;
+    justify-self:end;
+  }
+}
+
+/* =========================
+   TABLET
+   ========================= */
+@media(max-width:980px) and (min-width:681px){
+  .v40-timeline-layout{
+    grid-template-columns:minmax(0,1fr) 300px;
+    gap:30px;
+  }
+
+  .v40-timeline-image{
+    width:300px;
+    justify-self:end;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+@media(max-width:680px){
+  .v40-studio-video-band{
+    width:100vw;
+    aspect-ratio:16 / 9;
+  }
+
+  .v40-timeline-layout{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+
+  .v40-timeline-image{
+    width:100%;
+    max-width:430px;
+    margin:0 auto;
+  }
+
+  .v40-timeline .timeline-row{
+    grid-template-columns:94px minmax(0,1fr);
+    gap:14px;
+  }
+
+  .v40-timeline .timeline-row b{
+    white-space:nowrap;
+  }
+}
