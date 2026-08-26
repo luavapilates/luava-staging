@@ -1,0 +1,178 @@
+
+/* =========================================================
+   LUAVA V23 — DESKTOP LAYOUT REFINEMENT
+   Mobile stays untouched.
+   ========================================================= */
+
+@media (min-width: 981px) {
+
+  /* ---------- PRICING ---------- */
+
+  /* Remove the green helper card on desktop only */
+  .desktop-home .credit-note,
+  .desktop-home .price-head + .credit-note,
+  .desktop-home .price-head ~ .credit-note{
+    display:none !important;
+  }
+
+  /* Keep only the core credit statement directly under headline */
+  .desktop-home .price-head .lead,
+  .desktop-home .price-head p{
+    font-weight:700 !important;
+    color:#4b403a !important;
+    font-size:.9rem !important;
+    line-height:1.35 !important;
+    max-width:420px !important;
+  }
+
+  /* ---------- BOOKING ---------- */
+
+  .desktop-home .v23-booking{
+    padding-top:64px !important;
+    padding-bottom:64px !important;
+  }
+
+  .desktop-home .v23-booking .booking-teaser{
+    display:grid !important;
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr) !important;
+    grid-template-areas:
+      "heading heading"
+      "steps schedule"
+      "button button" !important;
+    column-gap:56px !important;
+    row-gap:26px !important;
+    align-items:start !important;
+  }
+
+  /* Use left column container as heading + steps */
+  .desktop-home .v23-booking .booking-teaser > div:first-child{
+    display:contents !important;
+  }
+
+  .desktop-home .v23-booking .eyebrow{
+    grid-area:heading !important;
+    margin-bottom:0 !important;
+  }
+
+  .desktop-home .v23-booking .h2{
+    grid-area:heading !important;
+    white-space:nowrap !important;
+    font-size:clamp(2.9rem,4.2vw,4.6rem) !important;
+    line-height:.95 !important;
+    margin:22px 0 0 !important;
+    align-self:end !important;
+  }
+
+  /* Hide explanatory paragraph, the steps are enough */
+  .desktop-home .v23-booking .lead{
+    display:none !important;
+  }
+
+  .desktop-home .v23-booking .steps{
+    grid-area:steps !important;
+    margin:0 !important;
+    align-self:start !important;
+  }
+
+  .desktop-home .v23-booking .schedule-preview{
+    grid-area:schedule !important;
+    align-self:start !important;
+    width:100% !important;
+    margin:0 !important;
+  }
+
+  .desktop-home .v23-booking .hero-actions{
+    grid-area:button !important;
+    margin:0 !important;
+    justify-content:center !important;
+  }
+
+  .desktop-home .v23-booking .hero-actions .btn{
+    min-width:220px !important;
+  }
+
+  /* ---------- FIRST VISIT ---------- */
+
+  .desktop-home .v23-visit{
+    padding-top:64px !important;
+    padding-bottom:64px !important;
+  }
+
+  .desktop-home .v23-visit .visit{
+    display:grid !important;
+    grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr) !important;
+    grid-template-areas:
+      "heading heading"
+      "info image"
+      "button button" !important;
+    column-gap:56px !important;
+    row-gap:26px !important;
+    align-items:start !important;
+  }
+
+  .desktop-home .v23-visit .visit > div:first-child{
+    display:contents !important;
+  }
+
+  .desktop-home .v23-visit .eyebrow{
+    grid-area:heading !important;
+    margin-bottom:0 !important;
+  }
+
+  .desktop-home .v23-visit .h2{
+    grid-area:heading !important;
+    white-space:nowrap !important;
+    font-size:clamp(3rem,4.3vw,4.8rem) !important;
+    line-height:.95 !important;
+    margin:22px 0 0 !important;
+  }
+
+  /* Hide intro paragraph to keep it cleaner */
+  .desktop-home .v23-visit .lead{
+    display:none !important;
+  }
+
+  .desktop-home .v23-visit .visit-list{
+    grid-area:info !important;
+    margin:0 !important;
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    gap:0 22px !important;
+    align-self:start !important;
+  }
+
+  .desktop-home .v23-visit .health,
+  .desktop-home .v23-visit .rule-alert{
+    grid-column:1 / -1 !important;
+  }
+
+  .desktop-home .v23-visit > .ph{
+    grid-area:image !important;
+    min-height:430px !important;
+    margin:0 !important;
+    align-self:start !important;
+  }
+
+  .desktop-home .v23-visit .hero-actions{
+    grid-area:button !important;
+    margin:0 !important;
+    justify-content:center !important;
+  }
+
+  .desktop-home .v23-visit .hero-actions .btn{
+    min-width:240px !important;
+  }
+}
+
+/* Slightly smaller laptops */
+@media (min-width:981px) and (max-width:1180px){
+  .desktop-home .v23-booking .h2,
+  .desktop-home .v23-visit .h2{
+    white-space:normal !important;
+  }
+
+  .desktop-home .v23-booking .booking-teaser,
+  .desktop-home .v23-visit .visit{
+    column-gap:36px !important;
+  }
+}
