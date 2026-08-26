@@ -1,0 +1,148 @@
+
+/* =========================================================
+   LUAVA V31 — REFINED FOOTER
+   ========================================================= */
+
+.luava-footer-v30{
+  display:none!important;
+}
+
+.luava-footer-v31{
+  background:#6b5f57;
+  color:#f5eee8;
+  padding:52px 28px 28px;
+}
+
+.luava-footer-main-v31{
+  max-width:1240px;
+  margin:0 auto;
+  position:relative;
+  min-height:190px;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  align-items:center;
+}
+
+/* CONTACT LEFT */
+.luava-footer-contact-v31{
+  grid-column:1;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+}
+
+.luava-footer-contact-v31 a,
+.luava-footer-info-v31 a{
+  color:rgba(255,255,255,.78);
+  text-decoration:none;
+  font-size:.66rem;
+  line-height:1.5;
+}
+
+.luava-footer-contact-v31 a:hover,
+.luava-footer-info-v31 a:hover{
+  color:#fff;
+}
+
+.luava-footer-title{
+  margin-bottom:4px;
+  font-size:.7rem;
+  font-weight:800;
+  letter-spacing:.04em;
+  color:#fff;
+}
+
+/* TRUE CENTER BRAND */
+.luava-footer-brand-v31{
+  grid-column:2;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.luava-footer-brand-v31 img{
+  width:190px;
+  max-width:100%;
+  filter:brightness(0) invert(1);
+  opacity:.98;
+  display:block;
+  margin:0 auto;
+}
+
+.luava-footer-copyright-center{
+  margin-top:18px;
+  font-size:.68rem;
+  font-weight:800;
+  letter-spacing:.01em;
+  color:#fff;
+}
+
+/* BOTTOM INFO — replaces legal links */
+.luava-footer-bottom-v31{
+  max-width:1240px;
+  margin:26px auto 0;
+  padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.16);
+}
+
+.luava-footer-info-v31{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:8px;
+  width:max-content;
+}
+
+/* Desktop geometry */
+@media(min-width:981px){
+  .luava-footer-main-v31{
+    grid-template-columns:minmax(240px,1fr) minmax(280px,1fr) minmax(240px,1fr);
+  }
+
+  .luava-footer-bottom-v31{
+    display:flex;
+    justify-content:flex-start;
+  }
+}
+
+/* Mobile */
+@media(max-width:680px){
+  .luava-footer-v31{
+    padding:38px 20px 24px;
+  }
+
+  .luava-footer-main-v31{
+    grid-template-columns:1fr;
+    min-height:auto;
+    gap:28px;
+  }
+
+  .luava-footer-brand-v31{
+    grid-column:1;
+    grid-row:1;
+  }
+
+  .luava-footer-brand-v31 img{
+    width:155px;
+  }
+
+  .luava-footer-contact-v31{
+    grid-column:1;
+    grid-row:2;
+    align-items:center;
+    text-align:center;
+  }
+
+  .luava-footer-bottom-v31{
+    text-align:center;
+  }
+
+  .luava-footer-info-v31{
+    width:100%;
+    align-items:center;
+    text-align:center;
+  }
+}
