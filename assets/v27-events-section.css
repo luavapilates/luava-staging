@@ -1,0 +1,134 @@
+
+/* =========================================================
+   LUAVA V27 — EVENTS / DUO SECTION MATCHES FIRST-VISIT STYLE
+   Desktop only. Mobile untouched.
+   ========================================================= */
+
+@media (min-width:981px){
+
+  .desktop-home .v27-events-section .duo-panel,
+  .desktop-home .v27-duo-panel{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    grid-template-areas:
+      "heading heading"
+      "info image"
+      "button button"!important;
+    column-gap:42px!important;
+    row-gap:28px!important;
+    align-items:stretch!important;
+  }
+
+  .desktop-home .v27-events-section .duo-panel > div:first-child,
+  .desktop-home .v27-duo-panel > div:first-child{
+    display:contents!important;
+  }
+
+  .desktop-home .v27-events-section .eyebrow,
+  .desktop-home .v27-duo-panel .eyebrow{
+    grid-area:heading!important;
+    margin:0 0 10px!important;
+  }
+
+  .desktop-home .v27-events-section .h2,
+  .desktop-home .v27-duo-panel .h2{
+    grid-area:heading!important;
+    margin:22px 0 0!important;
+    white-space:nowrap!important;
+    font-size:clamp(3rem,4.15vw,4.65rem)!important;
+    line-height:.96!important;
+  }
+
+  .desktop-home .v27-events-section .lead,
+  .desktop-home .v27-duo-panel .lead{
+    display:none!important;
+  }
+
+  /* The missing large white box */
+  .desktop-home .v27-events-grid{
+    grid-area:info!important;
+    width:100%!important;
+    min-height:420px!important;
+    height:100%!important;
+    margin:0!important;
+    padding:24px!important;
+    border:1px solid var(--line)!important;
+    border-radius:22px!important;
+    background:rgba(255,255,255,.42)!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    grid-template-rows:1fr 1fr!important;
+    gap:0 22px!important;
+    align-items:stretch!important;
+  }
+
+  .desktop-home .v27-events-grid > div{
+    padding:22px 8px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+    border-bottom:1px solid var(--line)!important;
+  }
+
+  .desktop-home .v27-events-grid > div:nth-child(odd){
+    border-right:1px solid var(--line)!important;
+    padding-right:22px!important;
+  }
+
+  .desktop-home .v27-events-grid > div:nth-child(even){
+    padding-left:22px!important;
+  }
+
+  .desktop-home .v27-events-grid > div:nth-child(n+3){
+    border-bottom:none!important;
+  }
+
+  .desktop-home .v27-events-grid b{
+    display:block!important;
+    margin-bottom:6px!important;
+    font-family:var(--serif)!important;
+    font-size:1.2rem!important;
+    font-weight:500!important;
+  }
+
+  .desktop-home .v27-events-grid span{
+    display:block!important;
+    font-size:.73rem!important;
+    line-height:1.45!important;
+    color:var(--muted)!important;
+  }
+
+  /* Right placeholder identical height and radius */
+  .desktop-home .v27-events-section > .wrap.duo-panel > .ph,
+  .desktop-home .v27-duo-panel > .ph{
+    grid-area:image!important;
+    min-height:420px!important;
+    height:100%!important;
+    width:100%!important;
+    margin:0!important;
+    border-radius:22px!important;
+  }
+
+  /* True center across BOTH columns */
+  .desktop-home .v27-events-cta{
+    grid-area:button!important;
+    width:100%!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    margin:0!important;
+  }
+
+  .desktop-home .v27-events-cta .btn{
+    width:280px!important;
+    max-width:280px!important;
+    margin:0 auto!important;
+  }
+}
+
+@media (min-width:981px) and (max-width:1180px){
+  .desktop-home .v27-events-section .h2,
+  .desktop-home .v27-duo-panel .h2{
+    white-space:normal!important;
+  }
+}
