@@ -1,0 +1,171 @@
+
+/* =========================================================
+   LUAVA V36 — FIX "WAS MUSS ICH WISSEN?"
+   ========================================================= */
+
+.v36-knowledge-section{
+  position:relative;
+  clear:both;
+  overflow:visible;
+}
+
+.v36-knowledge-section .wrap{
+  position:relative;
+}
+
+.v36-knowledge-head{
+  width:100%;
+  margin-bottom:26px;
+}
+
+.v36-knowledge-head .h2{
+  margin-bottom:12px;
+}
+
+.v36-knowledge-head .lead{
+  max-width:760px;
+  margin:0;
+}
+
+.v36-knowledge-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:42px;
+  align-items:stretch;
+  width:100%;
+}
+
+.v36-info-card,
+.v36-knowledge-image{
+  box-sizing:border-box;
+  min-width:0;
+  height:100%;
+  min-height:430px;
+}
+
+.v36-info-card{
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:rgba(255,255,255,.46);
+  padding:22px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:auto auto auto auto;
+  align-content:start;
+  gap:0 20px;
+  overflow:hidden;
+}
+
+.v36-info-item{
+  padding:16px 8px;
+  border-bottom:1px solid var(--line);
+}
+
+.v36-info-item:nth-child(odd){
+  border-right:1px solid var(--line);
+  padding-right:20px;
+}
+
+.v36-info-item:nth-child(even){
+  padding-left:20px;
+}
+
+.v36-info-item b{
+  display:block;
+  font-family:var(--serif);
+  font-size:1.08rem;
+  font-weight:500;
+  margin-bottom:4px;
+}
+
+.v36-info-item span{
+  display:block;
+  color:var(--muted);
+  font-size:.7rem;
+  line-height:1.45;
+}
+
+.v36-wide{
+  grid-column:1 / -1;
+  width:100%;
+  box-sizing:border-box;
+  margin:12px 0 0!important;
+}
+
+.v36-info-card .health{
+  margin-top:18px!important;
+}
+
+.v36-knowledge-image{
+  margin:0!important;
+  min-height:430px!important;
+  border-radius:22px!important;
+}
+
+.v36-knowledge-section + .v35-final-quote{
+  clear:both;
+  margin-top:0!important;
+}
+
+/* Desktop: compact but safely separated */
+@media(min-width:981px){
+  .v36-knowledge-section{
+    padding-top:54px!important;
+    padding-bottom:64px!important;
+  }
+
+  .v36-knowledge-head .h2{
+    white-space:nowrap;
+    font-size:clamp(3rem,4.4vw,4.6rem)!important;
+    line-height:.98!important;
+  }
+
+  .v36-knowledge-grid{
+    min-height:430px;
+  }
+
+  .v35-final-quote{
+    padding-top:34px!important;
+  }
+}
+
+/* Mobile / tablet: stack cleanly, no overflow */
+@media(max-width:980px){
+  .v36-knowledge-section{
+    padding-top:38px!important;
+    padding-bottom:42px!important;
+  }
+
+  .v36-knowledge-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .v36-info-card,
+  .v36-knowledge-image{
+    min-height:0;
+    height:auto;
+  }
+
+  .v36-info-card{
+    grid-template-columns:1fr;
+    padding:18px;
+  }
+
+  .v36-info-item{
+    border-right:none!important;
+    padding:14px 4px!important;
+  }
+
+  .v36-info-item:nth-child(4){
+    border-bottom:none;
+  }
+
+  .v36-wide{
+    grid-column:1;
+  }
+
+  .v36-knowledge-image{
+    min-height:360px!important;
+  }
+}
