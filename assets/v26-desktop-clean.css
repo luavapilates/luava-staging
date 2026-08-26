@@ -1,0 +1,179 @@
+
+/* =========================================================
+   LUAVA V26 — Desktop Clean Pass
+   ========================================================= */
+
+@media (min-width:981px){
+
+  /* ---------- CLASSES ---------- */
+
+  /* Any leftover explainer strip is hidden on desktop. */
+  .desktop-home .class-guide,
+  .desktop-home .level-guide{
+    display:none!important;
+  }
+
+  /* Pull class cards closer to the intro. */
+  .desktop-home .class-grid{
+    margin-top:22px!important;
+  }
+
+  /* ---------- EVENTS / DUO ---------- */
+
+  .desktop-home .v26-events-section .duo-panel,
+  .desktop-home .v26-duo-panel{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    grid-template-areas:
+      "heading heading"
+      "info image"
+      "button button"!important;
+    column-gap:42px!important;
+    row-gap:28px!important;
+    align-items:stretch!important;
+  }
+
+  .desktop-home .v26-events-section .duo-panel > div:first-child,
+  .desktop-home .v26-duo-panel > div:first-child{
+    display:contents!important;
+  }
+
+  .desktop-home .v26-events-section .eyebrow,
+  .desktop-home .v26-duo-panel .eyebrow{
+    grid-area:heading!important;
+    margin:0 0 10px!important;
+  }
+
+  .desktop-home .v26-events-section .h2,
+  .desktop-home .v26-duo-panel .h2{
+    grid-area:heading!important;
+    margin:22px 0 0!important;
+    white-space:nowrap!important;
+    font-size:clamp(3rem,4.15vw,4.65rem)!important;
+    line-height:.96!important;
+  }
+
+  .desktop-home .v26-events-section .lead,
+  .desktop-home .v26-duo-panel .lead{
+    display:none!important;
+  }
+
+  .desktop-home .v26-events-section .v26-events-list,
+  .desktop-home .v26-duo-panel .v26-events-list,
+  .desktop-home .v26-events-section .event-list,
+  .desktop-home .v26-duo-panel .event-list{
+    grid-area:info!important;
+    width:100%!important;
+    min-height:420px!important;
+    padding:24px!important;
+    border:1px solid var(--line)!important;
+    border-radius:22px!important;
+    background:rgba(255,255,255,.42)!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    align-content:start!important;
+    gap:0 22px!important;
+    margin:0!important;
+  }
+
+  .desktop-home .v26-events-section > .wrap.duo-panel > .ph,
+  .desktop-home .v26-duo-panel > .ph{
+    grid-area:image!important;
+    min-height:420px!important;
+    height:100%!important;
+    margin:0!important;
+    border-radius:22px!important;
+  }
+
+  .desktop-home .v26-events-cta{
+    grid-area:button!important;
+    display:flex!important;
+    justify-content:center!important;
+    width:100%!important;
+    margin:0!important;
+  }
+
+  .desktop-home .v26-events-cta .btn{
+    width:280px!important;
+    max-width:280px!important;
+  }
+
+  /* ---------- VIDEO HERO ---------- */
+
+  .luava-video-content{
+    padding-bottom:40px!important;
+  }
+
+  .luava-video-logo{
+    margin-bottom:0!important;
+  }
+
+  .luava-video-sub,
+  .luava-video-cta,
+  .luava-scroll-cue{
+    display:none!important;
+  }
+
+  .luava-bottom-booking{
+    position:absolute;
+    z-index:3;
+    left:50%;
+    bottom:28px;
+    transform:translateX(-50%);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:46px;
+    padding:0 20px;
+    border:1px solid rgba(255,255,255,.72);
+    border-radius:999px;
+    color:#fff;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    font-size:.74rem;
+    font-weight:800;
+    text-decoration:none;
+  }
+
+  .luava-bottom-booking:hover{
+    background:#fff;
+    color:var(--ink);
+  }
+}
+
+/* Mobile hero gets the same simplification requested */
+@media(max-width:680px){
+  .luava-video-sub,
+  .luava-video-cta,
+  .luava-scroll-cue{
+    display:none!important;
+  }
+
+  .luava-bottom-booking{
+    position:absolute;
+    z-index:3;
+    left:50%;
+    bottom:20px;
+    transform:translateX(-50%);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:44px;
+    padding:0 18px;
+    border:1px solid rgba(255,255,255,.72);
+    border-radius:999px;
+    color:#fff;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+    font-size:.7rem;
+    font-weight:800;
+    white-space:nowrap;
+    text-decoration:none;
+  }
+
+  /* Explainer strip removed on mobile too. */
+  .mobile-home .class-guide,
+  .mobile-home .level-guide{
+    display:none!important;
+  }
+}
