@@ -1,0 +1,240 @@
+
+/* =========================================================
+   LUAVA V24 — DESKTOP POLISH
+   Mobile behavior remains untouched.
+   ========================================================= */
+
+@media (min-width:981px){
+
+  /* --- Pricing: per-class price is the comparison anchor --- */
+  .desktop-home .price.feature,
+  body .prices .price.feature{
+    transform:none!important;
+  }
+
+  .desktop-home .per-class,
+  body .prices .per-class{
+    margin:14px 0 4px;
+    padding-top:13px;
+    border-top:1px solid rgba(74,62,55,.13);
+  }
+
+  .desktop-home .per-class strong,
+  body .prices .per-class strong{
+    display:block;
+    font-family:var(--serif);
+    font-size:1.7rem;
+    line-height:1;
+    letter-spacing:-.025em;
+  }
+
+  .desktop-home .per-class span,
+  body .prices .per-class span{
+    display:block;
+    margin-top:5px;
+    font-size:.64rem;
+    font-weight:800;
+    letter-spacing:.025em;
+    color:var(--muted);
+  }
+
+  .desktop-home .validity,
+  body .prices .validity{
+    margin:7px 0 14px!important;
+    font-size:.62rem!important;
+    color:var(--muted)!important;
+  }
+
+  /* 66 package is no longer Best Value */
+  .desktop-home .prices .price:nth-child(4),
+  body .prices .price:nth-child(4){
+    background:rgba(255,255,255,.5)!important;
+    color:var(--ink)!important;
+  }
+
+  .desktop-home .prices .price:nth-child(4) small,
+  .desktop-home .prices .price:nth-child(4) .validity,
+  .desktop-home .prices .price:nth-child(4) .per-class span,
+  body .prices .price:nth-child(4) small,
+  body .prices .price:nth-child(4) .validity,
+  body .prices .price:nth-child(4) .per-class span{
+    color:var(--muted)!important;
+  }
+
+  .desktop-home .prices .price:nth-child(4) .btn,
+  body .prices .price:nth-child(4) .btn{
+    background:transparent!important;
+    color:var(--ink)!important;
+    border:1px solid var(--line)!important;
+  }
+
+  /* XXL is the visual Best Value */
+  .desktop-home .home-xxl,
+  body .prices .xxl{
+    background:linear-gradient(145deg,#282421,#433a34)!important;
+    color:white!important;
+  }
+
+  .desktop-home .home-xxl small,
+  .desktop-home .home-xxl .validity,
+  .desktop-home .home-xxl .per-class span,
+  body .prices .xxl small,
+  body .prices .xxl .validity,
+  body .prices .xxl .per-class span{
+    color:rgba(255,255,255,.7)!important;
+  }
+
+  .desktop-home .home-xxl .per-class,
+  body .prices .xxl .per-class{
+    border-top-color:rgba(255,255,255,.18)!important;
+  }
+
+  .desktop-home .home-xxl .btn,
+  body .prices .xxl .btn{
+    background:#efe4d8!important;
+    color:#2b2522!important;
+    border-color:transparent!important;
+  }
+
+  /* --- Booking: two genuinely equal halves --- */
+  .desktop-home .v23-booking .booking-teaser{
+    grid-template-columns:1fr 1fr!important;
+    grid-template-areas:
+      "heading heading"
+      "steps schedule"
+      "button button"!important;
+    column-gap:42px!important;
+    row-gap:28px!important;
+  }
+
+  .desktop-home .v23-booking .v24-step-panel,
+  .desktop-home .v23-booking .v24-schedule-panel{
+    width:100%!important;
+    min-height:278px!important;
+    height:100%!important;
+    border-radius:22px!important;
+  }
+
+  .desktop-home .v23-booking .v24-step-panel{
+    grid-area:steps!important;
+    margin:0!important;
+    padding:22px 24px!important;
+    border:1px solid var(--line)!important;
+    background:rgba(255,255,255,.42)!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:center!important;
+  }
+
+  .desktop-home .v23-booking .step{
+    flex:1!important;
+    min-height:0!important;
+    display:grid!important;
+    grid-template-columns:38px 1fr!important;
+    align-items:center!important;
+    padding:12px 0!important;
+  }
+
+  .desktop-home .v23-booking .v24-schedule-panel{
+    grid-area:schedule!important;
+    padding:22px 24px!important;
+  }
+
+  .desktop-home .v23-booking .v24-centered-cta{
+    grid-area:button!important;
+    display:flex!important;
+    justify-content:center!important;
+    width:100%!important;
+  }
+
+  .desktop-home .v23-booking .v24-centered-cta .btn{
+    width:280px!important;
+    max-width:280px!important;
+  }
+
+  /* --- First visit: headline full-width, equal content/image halves --- */
+  .desktop-home .v24-visit-section .visit{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    grid-template-areas:
+      "copy copy"
+      "info image"
+      "button button"!important;
+    column-gap:42px!important;
+    row-gap:28px!important;
+    align-items:stretch!important;
+  }
+
+  .desktop-home .v24-visit-section .visit > div:first-child{
+    display:contents!important;
+  }
+
+  .desktop-home .v24-visit-section .eyebrow{
+    grid-area:copy!important;
+    margin:0 0 10px!important;
+  }
+
+  .desktop-home .v24-visit-section .h2{
+    grid-area:copy!important;
+    margin:22px 0 0!important;
+    white-space:nowrap!important;
+    font-size:clamp(3rem,4.2vw,4.7rem)!important;
+    line-height:.96!important;
+  }
+
+  .desktop-home .v24-visit-section .v24-visit-intro{
+    display:none!important;
+  }
+
+  .desktop-home .v24-visit-section .visit-list{
+    grid-area:info!important;
+    margin:0!important;
+    min-height:430px!important;
+    padding:24px!important;
+    border:1px solid var(--line)!important;
+    border-radius:22px!important;
+    background:rgba(255,255,255,.4)!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    align-content:start!important;
+    gap:0 22px!important;
+  }
+
+  .desktop-home .v24-visit-section .health,
+  .desktop-home .v24-visit-section .rule-alert{
+    grid-column:1/-1!important;
+    margin-top:11px!important;
+  }
+
+  .desktop-home .v24-visit-section > .wrap.visit > .ph{
+    grid-area:image!important;
+    min-height:430px!important;
+    height:100%!important;
+    margin:0!important;
+    border-radius:22px!important;
+  }
+
+  .desktop-home .v24-visit-section .v24-visit-cta{
+    grid-area:button!important;
+    display:flex!important;
+    justify-content:center!important;
+    width:100%!important;
+    margin:0!important;
+  }
+
+  .desktop-home .v24-visit-section .v24-visit-cta .btn{
+    width:280px!important;
+    max-width:280px!important;
+  }
+
+  /* Credits page comparison strip can now fit five columns */
+  body .value-strip:has(> div > b:first-child){
+    grid-template-columns:1.35fr repeat(4,1fr)!important;
+  }
+}
+
+@media (min-width:981px) and (max-width:1180px){
+  .desktop-home .v24-visit-section .h2{
+    white-space:normal!important;
+  }
+}
