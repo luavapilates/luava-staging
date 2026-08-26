@@ -154,3 +154,16 @@
     margin-top:20px;
   }
 }
+
+
+/* V33 — Legal links right side, vertically stacked like Kontakt */
+@media(min-width:681px){
+  .luava-footer-legal-v32{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    align-items:flex-end !important;
+    gap:7px !important;
+    text-align:right !important;
+  }
+}
