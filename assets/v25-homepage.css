@@ -1,0 +1,99 @@
+
+/* =========================================================
+   LUAVA V25 — Homepage simplification + hierarchy polish
+   ========================================================= */
+
+@media (min-width:981px){
+
+  /* --- Price hierarchy: total first, per-class second --- */
+  .desktop-home .per-class strong,
+  body .prices .per-class strong{
+    font-size:1.32rem!important;
+    font-weight:500!important;
+    line-height:1.05!important;
+  }
+
+  .desktop-home .per-class span,
+  body .prices .per-class span{
+    margin-top:4px!important;
+    font-size:.60rem!important;
+    font-weight:700!important;
+    opacity:.88;
+  }
+
+  .desktop-home .per-class,
+  body .prices .per-class{
+    margin-top:12px!important;
+    padding-top:10px!important;
+  }
+
+  /* Center single ticket and all-prices CTA */
+  .desktop-home .v25-price-footer{
+    border-top:1px solid var(--line);
+    margin-top:22px;
+    padding-top:22px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    text-align:center;
+  }
+
+  .desktop-home .v25-single-ticket b{
+    display:block;
+    font-family:var(--serif);
+    font-size:1.28rem;
+    font-weight:500;
+  }
+
+  .desktop-home .v25-single-ticket span{
+    display:block;
+    margin-top:3px;
+    font-size:.72rem;
+    color:var(--muted);
+  }
+
+  .desktop-home .v25-price-footer .btn{
+    min-width:220px;
+  }
+
+  /* First visit: bars live inside left card */
+  .desktop-home .v24-visit-section .visit-list{
+    grid-template-columns:1fr 1fr!important;
+    grid-auto-rows:min-content!important;
+    align-content:start!important;
+  }
+
+  .desktop-home .v24-visit-section .visit-list .health,
+  .desktop-home .v24-visit-section .visit-list .rule-alert{
+    grid-column:1/-1!important;
+    width:100%!important;
+    margin:12px 0 0!important;
+  }
+
+  .desktop-home .v24-visit-section .visit-list .health{
+    margin-top:18px!important;
+  }
+
+  /* FAQ heading: single line and more compact */
+  .desktop-home .v25-faq-heading{
+    white-space:nowrap!important;
+    font-size:clamp(2.8rem,4vw,4.2rem)!important;
+    line-height:1!important;
+    margin-bottom:12px!important;
+  }
+
+  #faq .faq{
+    margin-top:24px!important;
+  }
+}
+
+/* Mobile: remove old Why-LUAVA strip if any inherited version still renders it. */
+@media(max-width:680px){
+  .mobile-home .value-strip,
+  .mobile-home .m-benefits,
+  .mobile-home .m-why{
+    display:none!important;
+  }
+}
